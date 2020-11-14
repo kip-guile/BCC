@@ -297,6 +297,45 @@ input:focus {
 .aside-container {
   width: 25%;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-container > div {
+  width: 85%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-container > div > .user-picture > img {
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.aside-container > div > .user-picture > .focus {
+  position: absolute;
+  top: 47%;
+  left: 19%;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 0.5px solid #d2d7dd;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.username {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 1.5rem;
 }
 
 .main-box {
