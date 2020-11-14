@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+html {
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-container {
+  color: #ffffff;
+  background-color: #1b1f23;
+  padding: 1rem;
+  height: 62px;
+}
+
+.logo-form-tab {
+  color: #ffffff;
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  align-items: center;
+}
+
+.icon-box {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .logo-form-tab > .form-box {
+    display: none;
+  }
+  .logo-form-tab > .tabs {
+    display: none;
+  }
+}
+
+.tabs {
+  list-style: none;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.tabs > li {
+  margin-right: 2rem;
+}
+
+.form-box {
+  margin-left: 2rem;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 272px;
+  border: 0.5px solid grey;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input {
+  min-width: 80%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  background: #1b1f23;
+  color: grey;
+  border: 0;
+}
+
+input:focus {
+  width: calc(100vw / 4);
+  color: #1b1f23;
+  background: white;
+  border: 0;
+}
+
+.slash {
+  width: 8%;
+  margin-top: 1px;
+}
+
+.small-profile {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}

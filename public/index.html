@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>github.com/kip-guile</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
 <body>
     <header class="header-container">
         <nav class='navigation'>
-            <div class="logo">
+            <div class="logo-form-tab">
                 <a href="/">
                     <svg fill="currentColor" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -16,11 +17,15 @@
                         </path>
                     </svg>
                 </a>
-            
-                <form action="">
-                    <input placeholder="Search or Jump to" type="search" />
-                    <span></span>
-                </form>
+                
+                <div class='form-box'>
+                    <form action="">
+                        <input placeholder="Search or jump to..." type="search" />
+                    </form>
+                    <span class="slash">
+                        <img  src="https://github.githubassets.com/images/search-key-slash.svg" alt="slash">
+                    </span>
+                </div>
             
                 <ul class="tabs">
                     <li>
@@ -39,24 +44,24 @@
                         <a href="#">Explore</a>
                     </li>
                 </ul>
-                <div class="flex space-x-between-sm">
-                    <a href="#" class="flex notification items-center">
-                        <ion-icon class="large-icon" name="notifications-outline"></ion-icon>
-                        <span class="dot">
-                            <ion-icon class="small-icon" name="ellipse"></ion-icon>
-                        </span>
-                    </a>
-                
-                    <a href="#" class="flex items-center">
-                        <ion-icon class="large-icon" name="add-outline"></ion-icon>
-                        <ion-icon class="small-icon" name="caret-down-outline"></ion-icon>
-                    </a>
-                
-                    <a href="#" class="flex items-center">
-                        <img src="https://avatars1.githubusercontent.com/u/38817414?s=60&v=4" class="avatar" alt="kip-guile" />
-                        <ion-icon class="small-icon" name="caret-down-outline"></ion-icon>
-                    </a>
-                </div>
+            </div>
+            <div class="icon-box">
+                <a href="#" class="flex notification items-center">
+                    <ion-icon class="large-icon" name="notifications-outline"></ion-icon>
+                    <span class="dot">
+                        <ion-icon class="small-icon" name="ellipse"></ion-icon>
+                    </span>
+                </a>
+            
+                <a href="#" class="flex items-center">
+                    <ion-icon class="large-icon" name="add-outline"></ion-icon>
+                    <ion-icon class="small-icon" name="caret-down-outline"></ion-icon>
+                </a>
+            
+                <a href="#" class="flex items-center">
+                    <img src="https://avatars1.githubusercontent.com/u/38817414?s=60&v=4" class="small-profile" alt="kip-guile" />
+                    <ion-icon class="small-icon" name="caret-down-outline"></ion-icon>
+                </a>
             </div>
         </nav>
     </header>
