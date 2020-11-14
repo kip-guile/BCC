@@ -10,7 +10,7 @@ const graphqlQuery = `{
         emojiHTML
         message
       }
-      repositories(last: 20, privacy: PUBLIC, orderBy: {field: PUSHED_AT, direction: DESC}) {
+      repositories(first: 20, privacy: PUBLIC, orderBy: {field: PUSHED_AT, direction: DESC}) {
         totalCount
         nodes {
           languages(first: 1, orderBy: {field: SIZE, direction: DESC}) {
@@ -48,3 +48,22 @@ const graphqlQuery = `{
       }
     }
 }`
+
+const getDataFromGithub = () => {
+    fetch("https://api.github.com/graphql", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            Authorization: "bearer " + "d6e9b8cf7d79e4524d54ce6138b5ebdb0e554faa"
+        },
+        body: JSON.stringify({query: graphqlQuery}),
+    })
+        .then(res => res.json())
+        .then(res => console.log(res.data))
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+getDataFromGithub()
