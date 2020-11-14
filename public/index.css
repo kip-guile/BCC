@@ -383,3 +383,15 @@ form > .buttons > .green-button {
 form > .buttons > .green-button > span {
   color: #ffffff;
 }
+
+.repo-count {
+  font-size: 0.8rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  width: 25%;
+  border-bottom: 0.5px solid #d2d7dd;
+}
+
+.bold-count {
+  font-weight: bold;
+}
