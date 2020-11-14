@@ -132,6 +132,8 @@ table {
 html {
   box-sizing: border-box;
   color: #1b1f23;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 header {
@@ -253,7 +255,7 @@ input:focus {
 
 .inner-low-tab {
   display: flex;
-  width: 45%;
+  width: 50%;
 }
 
 .low-nav {
@@ -264,12 +266,13 @@ input:focus {
 }
 
 .low-tab-navs {
-  width: 20%;
-  /* background-color: green; */
+  width: 22%;
+  font-size: 14px;
   height: 98%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  color: grey;
 }
 
 .low-tab-navs:hover {
@@ -278,8 +281,66 @@ input:focus {
 
 .low-tab-navs.active {
   border-bottom: 2px solid #f9826c;
+  font-weight: bold;
 }
 
 .mr-1 {
   color: grey;
+  margin-right: 1rem;
+}
+
+.bottom-main {
+  display: flex;
+  min-height: 50rem;
+}
+
+.aside-container {
+  width: 25%;
+  min-height: 100%;
+}
+
+.main-box {
+  width: 75%;
+}
+
+.main-box > form {
+  height: 4rem;
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #d2d7dd;
+}
+
+form > .w-full {
+  width: 60%;
+  height: 60%;
+}
+
+form > .w-full > input {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  border: 0.5px solid #d2d7dd;
+  padding-left: 10px;
+}
+
+form > .buttons {
+  width: 35%;
+}
+
+form > .buttons > button {
+  border: 0;
+  border-radius: 5px;
+  padding: 6px;
+  margin-right: 10px;
+  border: 0.5px solid #d2d7dd;
+}
+
+form > .buttons > .green-button {
+  background-color: #2ea44f;
+}
+
+form > .buttons > .green-button > span {
+  color: #ffffff;
 }
