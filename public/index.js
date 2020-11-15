@@ -1,4 +1,4 @@
-const months = [
+const monthArray = [
     "Jan",
     "Feb",
     "Mar",
@@ -131,7 +131,7 @@ const repoData = (data) => {
         <div class="elements">
             Updated on ${new Date(project.updatedAt).getDate() +
             " " +
-            months[new Date(project.updatedAt).getMonth()]}
+            monthArray[new Date(project.updatedAt).getMonth()]}
         </div>
         </div>
 
