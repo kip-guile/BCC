@@ -128,7 +128,7 @@ const repoData = (data) => {
             <span>${project.forkCount}</span>
           </div>
 
-        <div class="elements">
+        <div class="elements time">
             Updated on ${new Date(project.updatedAt).getDate() +
             " " +
             monthArray[new Date(project.updatedAt).getMonth()]}
