@@ -1,4 +1,4 @@
-let MY_TOKEN = '802f5a5156ee016392a42c29923e5bd04756cfb1'
+let MY_TOKEN = 'some-token'
 const monthArray = [
     "Jan",
     "Feb",
