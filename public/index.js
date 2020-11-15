@@ -159,7 +159,7 @@ const getDataFromGithub = () => {
         headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
-            Authorization: "bearer " + "d6e9b8cf7d79e4524d54ce6138b5ebdb0e554faa"
+            Authorization: "bearer " + `${MY_TOKEN}`
         },
         body: JSON.stringify({query: graphqlQuery}),
     })
