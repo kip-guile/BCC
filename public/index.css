@@ -322,14 +322,17 @@ input:focus {
 .aside-container > div > .user-picture > img {
   width: 100%;
   border-radius: 50%;
-  position: relative;
   margin-top: -40px;
+}
+
+.aside-container > div > .user-picture {
+  position: relative;
 }
 
 .aside-container > div > .user-picture > .focus {
   position: absolute;
-  top: 40%;
-  left: 21%;
+  top: 70%;
+  left: 80%;
   background-color: white;
   padding: 0.5rem;
   border-radius: 50%;
