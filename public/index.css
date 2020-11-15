@@ -404,3 +404,76 @@ form > .buttons > .green-button > span {
 .projects > li > div > div > h2 > a {
   color: #1b1f23;
 }
+
+.projects > li > .project-box {
+  border-bottom: 0.5px solid #d2d7dd;
+  width: 95%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+}
+
+.projects > li > .project-box > .left-project-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects > li > .project-box > .left-project-box > h2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.projects > li > .project-box > .left-project-box > p {
+  color: gray;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.projects > li > .project-box > .left-project-box > h2 > a {
+  color: #4584dd;
+}
+
+.projects > li > .project-box > .left-project-box > h2 > a:hover {
+  text-decoration: underline;
+}
+
+.projects > li > .project-box > .left-project-box > .bottom-list {
+  display: flex;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.projects > li > .project-box > .star-box {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.projects > li > .project-box > .star-box > button {
+  height: 1.8rem;
+  border: 0.5px solid #d2d7dd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.elements {
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.elements > span {
+  color: gray;
+  margin-left: 0.2rem;
+}
+
+.elements > .notch {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}

@@ -94,17 +94,17 @@ const repoData = (data) => {
   data.nodes.forEach(project => {
     const singleProject = document.createElement('li')
     const projectHTML = `
-    <div>
-      <div>
+    <div class="project-box">
+      <div class="left-project-box">
         <h2>
           <a href="${project.url}">${project.name}</a>
         </h2>
         ${project.description ? "<p>" + project.description + "</p>" : ""}
 
-        <div>
-          <div>
-          <div" style="${!project.languages.edges[0] ? "display: none;" : ""}">
-          <span style="background: ${project.languages.edges[0]
+
+        <div class="bottom-list">
+          <div class="elements" style="${!project.languages.edges[0] ? "display: none;" : ""}">
+          <span class="notch" style="background: ${project.languages.edges[0]
             ? project.languages.edges[0].node.color
             : ""}">
               </span>
@@ -113,28 +113,30 @@ const repoData = (data) => {
                 project.languages.edges[0].node.name +
                 "</span>"
             : ""}
-        </div>
+          </div>
 
-        <div>
+
+        <div class="elements">
           <ion-icon name="star-outline"></ion-icon> 
             <span>
               ${project.stargazers.totalCount}
           </span>
         </div>
 
-        <div>
+        <div class="elements">
             <ion-icon name="git-network-outline"></ion-icon> 
             <span>${project.forkCount}</span>
           </div>
 
-        <div>
+        <div class="elements">
             Updated on ${new Date(project.updatedAt).getDate() +
             " " +
             months[new Date(project.updatedAt).getMonth()]}
         </div>
         </div>
+
       </div>
-      <div>
+      <div class="star-box">
         <button>
           <ion-icon name="star-outline" class="mr-1"></ion-icon> <span> Star </span>
         </button>
