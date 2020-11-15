@@ -313,29 +313,34 @@ input:focus {
   width: 100%;
   border-radius: 50%;
   position: relative;
+  margin-top: -40px;
 }
 
 .aside-container > div > .user-picture > .focus {
   position: absolute;
-  top: 47%;
-  left: 19%;
+  top: 40%;
+  left: 20%;
   background-color: white;
   padding: 0.5rem;
   border-radius: 50%;
   border: 0.5px solid #d2d7dd;
 }
 
+.bio-details {
+  margin-left: 1rem;
+}
+
 .name {
   font-weight: bold;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 .username {
   font-size: 1rem;
   color: gray;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .main-box {
@@ -394,4 +399,8 @@ form > .buttons > .green-button > span {
 
 .bold-count {
   font-weight: bold;
+}
+
+.projects > li > div > div > h2 > a {
+  color: #1b1f23;
 }
